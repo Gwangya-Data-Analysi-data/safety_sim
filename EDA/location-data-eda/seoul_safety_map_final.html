@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4afe725fb58c28be825a107b7335e59e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4afe725fb58c28be825a107b7335e59e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4afe725fb58c28be825a107b7335e59e = L.map(
+                "map_4afe725fb58c28be825a107b7335e59e",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55faf810d25b38748e0575969ae92d33 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+            var circle_marker_c0480105c95e6199684e24289c246c17 = L.circleMarker(
+                [37.5729, 126.9794],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_dacd0cebe22180f70bc64728db9db39b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f12b2431fc340cd3e124239ba269fa15 = $(`<div id="html_f12b2431fc340cd3e124239ba269fa15" style="width: 100.0%; height: 100.0%;">     구: 종로구<br>     위험 확률: 0.70<br>     복합 위험도: 0.70<br>     인구당범죄: 271.72<br>     인구당CCTV: 15.63     </div>`)[0];
+                popup_dacd0cebe22180f70bc64728db9db39b.setContent(html_f12b2431fc340cd3e124239ba269fa15);
+            
+        
+
+        circle_marker_c0480105c95e6199684e24289c246c17.bindPopup(popup_dacd0cebe22180f70bc64728db9db39b)
+        ;
+
+        
+    
+    
+            var circle_marker_19999aa029a128176cbe48146b76f4dc = L.circleMarker(
+                [37.5638, 126.9976],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_79152a32f71b522031c03ec580abf827 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_610e0a4fd04c226ddbc5776e8943978d = $(`<div id="html_610e0a4fd04c226ddbc5776e8943978d" style="width: 100.0%; height: 100.0%;">     구: 중구<br>     위험 확률: 0.69<br>     복합 위험도: 0.64<br>     인구당범죄: 294.08<br>     인구당CCTV: 22.83     </div>`)[0];
+                popup_79152a32f71b522031c03ec580abf827.setContent(html_610e0a4fd04c226ddbc5776e8943978d);
+            
+        
+
+        circle_marker_19999aa029a128176cbe48146b76f4dc.bindPopup(popup_79152a32f71b522031c03ec580abf827)
+        ;
+
+        
+    
+    
+            var circle_marker_bc77deb9f73502281306bcc3bd19c012 = L.circleMarker(
+                [37.5326, 126.9909],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_ee93f170b9689006c0f4e91efa92add9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c64f188e5ce82fcbcb1a969d22bc4709 = $(`<div id="html_c64f188e5ce82fcbcb1a969d22bc4709" style="width: 100.0%; height: 100.0%;">     구: 용산구<br>     위험 확률: 0.71<br>     복합 위험도: 0.46<br>     인구당범죄: 178.98<br>     인구당CCTV: 29.64     </div>`)[0];
+                popup_ee93f170b9689006c0f4e91efa92add9.setContent(html_c64f188e5ce82fcbcb1a969d22bc4709);
+            
+        
+
+        circle_marker_bc77deb9f73502281306bcc3bd19c012.bindPopup(popup_ee93f170b9689006c0f4e91efa92add9)
+        ;
+
+        
+    
+    
+            var circle_marker_ff1ef42d3eac173ff2068087efc5854c = L.circleMarker(
+                [37.5633, 127.0371],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_2454471d83ba2b024f7b54fd2f01cf5d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_53af68b8c01b91d4e560526862f39802 = $(`<div id="html_53af68b8c01b91d4e560526862f39802" style="width: 100.0%; height: 100.0%;">     구: 성동구<br>     위험 확률: 0.10<br>     복합 위험도: nan<br>     인구당범죄: 116.63<br>     인구당CCTV: nan     </div>`)[0];
+                popup_2454471d83ba2b024f7b54fd2f01cf5d.setContent(html_53af68b8c01b91d4e560526862f39802);
+            
+        
+
+        circle_marker_ff1ef42d3eac173ff2068087efc5854c.bindPopup(popup_2454471d83ba2b024f7b54fd2f01cf5d)
+        ;
+
+        
+    
+    
+            var circle_marker_be95e335740e99054b1fdb13fcba479e = L.circleMarker(
+                [37.5385, 127.0823],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_34d45f9babdeb602c503e50716bc5571 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe528580af7315c3b2d0f23fda08d0d3 = $(`<div id="html_fe528580af7315c3b2d0f23fda08d0d3" style="width: 100.0%; height: 100.0%;">     구: 광진구<br>     위험 확률: 0.15<br>     복합 위험도: 0.50<br>     인구당범죄: 125.05<br>     인구당CCTV: 3.40     </div>`)[0];
+                popup_34d45f9babdeb602c503e50716bc5571.setContent(html_fe528580af7315c3b2d0f23fda08d0d3);
+            
+        
+
+        circle_marker_be95e335740e99054b1fdb13fcba479e.bindPopup(popup_34d45f9babdeb602c503e50716bc5571)
+        ;
+
+        
+    
+    
+            var circle_marker_5c75e866ccd09f4dc0e9430192ec8012 = L.circleMarker(
+                [37.5744, 127.0396],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_2d57d5e6ac0daac42421b9ede4202aeb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_55bae4a621d4ad6a4551b7f32b1df0e2 = $(`<div id="html_55bae4a621d4ad6a4551b7f32b1df0e2" style="width: 100.0%; height: 100.0%;">     구: 동대문구<br>     위험 확률: 0.09<br>     복합 위험도: 0.41<br>     인구당범죄: 120.53<br>     인구당CCTV: 9.61     </div>`)[0];
+                popup_2d57d5e6ac0daac42421b9ede4202aeb.setContent(html_55bae4a621d4ad6a4551b7f32b1df0e2);
+            
+        
+
+        circle_marker_5c75e866ccd09f4dc0e9430192ec8012.bindPopup(popup_2d57d5e6ac0daac42421b9ede4202aeb)
+        ;
+
+        
+    
+    
+            var circle_marker_a7263fde5fa38677678f7d1af20877d1 = L.circleMarker(
+                [37.6066, 127.0926],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_1307fefc28fe9dfebfec684036871dae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_21d631c271d2f61bf0046cdf467c0f8b = $(`<div id="html_21d631c271d2f61bf0046cdf467c0f8b" style="width: 100.0%; height: 100.0%;">     구: 중랑구<br>     위험 확률: 0.10<br>     복합 위험도: 0.38<br>     인구당범죄: 110.13<br>     인구당CCTV: 11.48     </div>`)[0];
+                popup_1307fefc28fe9dfebfec684036871dae.setContent(html_21d631c271d2f61bf0046cdf467c0f8b);
+            
+        
+
+        circle_marker_a7263fde5fa38677678f7d1af20877d1.bindPopup(popup_1307fefc28fe9dfebfec684036871dae)
+        ;
+
+        
+    
+    
+            var circle_marker_4bc667372c75129dd2b297c32579f6f3 = L.circleMarker(
+                [37.5894, 127.0167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_17f4e3991d655002b4d518fe0a833262 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f6d13d2251a401519c6599e83a608273 = $(`<div id="html_f6d13d2251a401519c6599e83a608273" style="width: 100.0%; height: 100.0%;">     구: 성북구<br>     위험 확률: 0.08<br>     복합 위험도: 0.37<br>     인구당범죄: 88.48<br>     인구당CCTV: 10.23     </div>`)[0];
+                popup_17f4e3991d655002b4d518fe0a833262.setContent(html_f6d13d2251a401519c6599e83a608273);
+            
+        
+
+        circle_marker_4bc667372c75129dd2b297c32579f6f3.bindPopup(popup_17f4e3991d655002b4d518fe0a833262)
+        ;
+
+        
+    
+    
+            var circle_marker_9e70c1ba350763445e9fa0226b22357b = L.circleMarker(
+                [37.6396, 127.0257],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_a06c03b66456aad917e61f4217ce287c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e361892ee611a3d8453c00563f1ef2d9 = $(`<div id="html_e361892ee611a3d8453c00563f1ef2d9" style="width: 100.0%; height: 100.0%;">     구: 강북구<br>     위험 확률: 0.10<br>     복합 위험도: nan<br>     인구당범죄: nan<br>     인구당CCTV: 12.39     </div>`)[0];
+                popup_a06c03b66456aad917e61f4217ce287c.setContent(html_e361892ee611a3d8453c00563f1ef2d9);
+            
+        
+
+        circle_marker_9e70c1ba350763445e9fa0226b22357b.bindPopup(popup_a06c03b66456aad917e61f4217ce287c)
+        ;
+
+        
+    
+    
+            var circle_marker_4269444217001d1597cd5edd910e434c = L.circleMarker(
+                [37.6688, 127.0472],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_cd3aa3bdc8b5a597629c1422dd8445e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5730b44306d000995156ce82d31741c6 = $(`<div id="html_5730b44306d000995156ce82d31741c6" style="width: 100.0%; height: 100.0%;">     구: 도봉구<br>     위험 확률: 0.10<br>     복합 위험도: nan<br>     인구당범죄: 93.54<br>     인구당CCTV: nan     </div>`)[0];
+                popup_cd3aa3bdc8b5a597629c1422dd8445e0.setContent(html_5730b44306d000995156ce82d31741c6);
+            
+        
+
+        circle_marker_4269444217001d1597cd5edd910e434c.bindPopup(popup_cd3aa3bdc8b5a597629c1422dd8445e0)
+        ;
+
+        
+    
+    
+            var circle_marker_5f061709de8657a6af57dac24ac587d2 = L.circleMarker(
+                [37.6542, 127.0568],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_3db0e579e4f34c56e12eaf853f7572aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_795095179fb80708248659ee8f2bc217 = $(`<div id="html_795095179fb80708248659ee8f2bc217" style="width: 100.0%; height: 100.0%;">     구: 노원구<br>     위험 확률: 0.08<br>     복합 위험도: 0.41<br>     인구당범죄: 92.00<br>     인구당CCTV: 6.27     </div>`)[0];
+                popup_3db0e579e4f34c56e12eaf853f7572aa.setContent(html_795095179fb80708248659ee8f2bc217);
+            
+        
+
+        circle_marker_5f061709de8657a6af57dac24ac587d2.bindPopup(popup_3db0e579e4f34c56e12eaf853f7572aa)
+        ;
+
+        
+    
+    
+            var circle_marker_3753b217eb6186bd6d650c798bacd6f1 = L.circleMarker(
+                [37.6028, 126.9291],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_d6185ac724d7c6b23eeb81cf39c3e04a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96c022155591f5dc1544a4cd56dcadb9 = $(`<div id="html_96c022155591f5dc1544a4cd56dcadb9" style="width: 100.0%; height: 100.0%;">     구: 은평구<br>     위험 확률: 0.11<br>     복합 위험도: 0.34<br>     인구당범죄: 47.40<br>     인구당CCTV: 10.42     </div>`)[0];
+                popup_d6185ac724d7c6b23eeb81cf39c3e04a.setContent(html_96c022155591f5dc1544a4cd56dcadb9);
+            
+        
+
+        circle_marker_3753b217eb6186bd6d650c798bacd6f1.bindPopup(popup_d6185ac724d7c6b23eeb81cf39c3e04a)
+        ;
+
+        
+    
+    
+            var circle_marker_45cb08e500fc7f9a3ef35f77549b1b0b = L.circleMarker(
+                [37.5791, 126.9368],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_6a10eef1634b98c610366aedf0c5c7bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_13f08cf794f54753bd0e28f0af51c7cb = $(`<div id="html_13f08cf794f54753bd0e28f0af51c7cb" style="width: 100.0%; height: 100.0%;">     구: 서대문구<br>     위험 확률: 0.08<br>     복합 위험도: nan<br>     인구당범죄: nan<br>     인구당CCTV: 11.87     </div>`)[0];
+                popup_6a10eef1634b98c610366aedf0c5c7bb.setContent(html_13f08cf794f54753bd0e28f0af51c7cb);
+            
+        
+
+        circle_marker_45cb08e500fc7f9a3ef35f77549b1b0b.bindPopup(popup_6a10eef1634b98c610366aedf0c5c7bb)
+        ;
+
+        
+    
+    
+            var circle_marker_22a4cad0a4de89d9937764d3d71bef49 = L.circleMarker(
+                [37.5663, 126.9016],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_b178117a0e23f73e7df25f6552d38321 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a5d6e29572af6703e8bc0193a85c66fc = $(`<div id="html_a5d6e29572af6703e8bc0193a85c66fc" style="width: 100.0%; height: 100.0%;">     구: 마포구<br>     위험 확률: 0.43<br>     복합 위험도: 0.66<br>     인구당범죄: 153.21<br>     인구당CCTV: 0.01     </div>`)[0];
+                popup_b178117a0e23f73e7df25f6552d38321.setContent(html_a5d6e29572af6703e8bc0193a85c66fc);
+            
+        
+
+        circle_marker_22a4cad0a4de89d9937764d3d71bef49.bindPopup(popup_b178117a0e23f73e7df25f6552d38321)
+        ;
+
+        
+    
+    
+            var circle_marker_7b74a6166fb3f5b18f34253a4380cb03 = L.circleMarker(
+                [37.517, 126.8666],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_8c65e0b5904afc4202e222954c84bce7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0faf0977b8bf8d26eb774fdc8aff473a = $(`<div id="html_0faf0977b8bf8d26eb774fdc8aff473a" style="width: 100.0%; height: 100.0%;">     구: 양천구<br>     위험 확률: 0.41<br>     복합 위험도: 0.19<br>     인구당범죄: 83.33<br>     인구당CCTV: 35.63     </div>`)[0];
+                popup_8c65e0b5904afc4202e222954c84bce7.setContent(html_0faf0977b8bf8d26eb774fdc8aff473a);
+            
+        
+
+        circle_marker_7b74a6166fb3f5b18f34253a4380cb03.bindPopup(popup_8c65e0b5904afc4202e222954c84bce7)
+        ;
+
+        
+    
+    
+            var circle_marker_7e814301511b6444e3e42f7a2cd65ece = L.circleMarker(
+                [37.551, 126.8495],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_76adceed2b25965bfcddc9b377b7f783 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb0b7b4b17e494c0fcaaaa94b3ff5ae6 = $(`<div id="html_bb0b7b4b17e494c0fcaaaa94b3ff5ae6" style="width: 100.0%; height: 100.0%;">     구: 강서구<br>     위험 확률: 0.07<br>     복합 위험도: nan<br>     인구당범죄: nan<br>     인구당CCTV: 5.52     </div>`)[0];
+                popup_76adceed2b25965bfcddc9b377b7f783.setContent(html_bb0b7b4b17e494c0fcaaaa94b3ff5ae6);
+            
+        
+
+        circle_marker_7e814301511b6444e3e42f7a2cd65ece.bindPopup(popup_76adceed2b25965bfcddc9b377b7f783)
+        ;
+
+        
+    
+    
+            var circle_marker_8abd83b3348885e826ea1a5dfd11daef = L.circleMarker(
+                [37.4954, 126.8874],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_368a22c0b46012b3e10351ca3e80dfb2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_03e4b27628151b07fe9dcbb9ad0cbbd9 = $(`<div id="html_03e4b27628151b07fe9dcbb9ad0cbbd9" style="width: 100.0%; height: 100.0%;">     구: 구로구<br>     위험 확률: 0.09<br>     복합 위험도: 0.37<br>     인구당범죄: 102.68<br>     인구당CCTV: 11.33     </div>`)[0];
+                popup_368a22c0b46012b3e10351ca3e80dfb2.setContent(html_03e4b27628151b07fe9dcbb9ad0cbbd9);
+            
+        
+
+        circle_marker_8abd83b3348885e826ea1a5dfd11daef.bindPopup(popup_368a22c0b46012b3e10351ca3e80dfb2)
+        ;
+
+        
+    
+    
+            var circle_marker_d05d34d5a4a1704ed7d586b5019aa19b = L.circleMarker(
+                [37.457, 126.8959],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_3959ca532f22d1983ca0d643a19bcd8e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6dd3525c7d71040f1aa72f62bdcb0487 = $(`<div id="html_6dd3525c7d71040f1aa72f62bdcb0487" style="width: 100.0%; height: 100.0%;">     구: 금천구<br>     위험 확률: 0.22<br>     복합 위험도: 0.42<br>     인구당범죄: 130.45<br>     인구당CCTV: 13.26     </div>`)[0];
+                popup_3959ca532f22d1983ca0d643a19bcd8e.setContent(html_6dd3525c7d71040f1aa72f62bdcb0487);
+            
+        
+
+        circle_marker_d05d34d5a4a1704ed7d586b5019aa19b.bindPopup(popup_3959ca532f22d1983ca0d643a19bcd8e)
+        ;
+
+        
+    
+    
+            var circle_marker_0cc08b872a77fbd71bc59bd7f3377350 = L.circleMarker(
+                [37.5263, 126.8963],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_30b682d001276c19608d390020ebd7e6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8dba829e70bb7e6ec231f568e6f4d83 = $(`<div id="html_a8dba829e70bb7e6ec231f568e6f4d83" style="width: 100.0%; height: 100.0%;">     구: 영등포구<br>     위험 확률: 0.37<br>     복합 위험도: 0.51<br>     인구당범죄: 155.99<br>     인구당CCTV: 11.83     </div>`)[0];
+                popup_30b682d001276c19608d390020ebd7e6.setContent(html_a8dba829e70bb7e6ec231f568e6f4d83);
+            
+        
+
+        circle_marker_0cc08b872a77fbd71bc59bd7f3377350.bindPopup(popup_30b682d001276c19608d390020ebd7e6)
+        ;
+
+        
+    
+    
+            var circle_marker_0398668398ca0b0b1e658313a04d335f = L.circleMarker(
+                [37.5124, 126.9393],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_2c40016988d488280836d2827eece86d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ed83f6d82c72e6407adb44df6cdc0a48 = $(`<div id="html_ed83f6d82c72e6407adb44df6cdc0a48" style="width: 100.0%; height: 100.0%;">     구: 동작구<br>     위험 확률: 0.08<br>     복합 위험도: 0.41<br>     인구당범죄: 93.90<br>     인구당CCTV: 6.78     </div>`)[0];
+                popup_2c40016988d488280836d2827eece86d.setContent(html_ed83f6d82c72e6407adb44df6cdc0a48);
+            
+        
+
+        circle_marker_0398668398ca0b0b1e658313a04d335f.bindPopup(popup_2c40016988d488280836d2827eece86d)
+        ;
+
+        
+    
+    
+            var circle_marker_08d1403b1d4fe5a00005bb80c2464048 = L.circleMarker(
+                [37.4784, 126.9516],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_3fb7913553117aeb2661323f66b32d05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d8bcc0a0f9373ab9b4ef4db8777ab671 = $(`<div id="html_d8bcc0a0f9373ab9b4ef4db8777ab671" style="width: 100.0%; height: 100.0%;">     구: 관악구<br>     위험 확률: 0.14<br>     복합 위험도: 0.41<br>     인구당범죄: 121.90<br>     인구당CCTV: 10.82     </div>`)[0];
+                popup_3fb7913553117aeb2661323f66b32d05.setContent(html_d8bcc0a0f9373ab9b4ef4db8777ab671);
+            
+        
+
+        circle_marker_08d1403b1d4fe5a00005bb80c2464048.bindPopup(popup_3fb7913553117aeb2661323f66b32d05)
+        ;
+
+        
+    
+    
+            var circle_marker_70e169bc4781e42fccfe18f12fe0946a = L.circleMarker(
+                [37.4837, 127.0324],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_fd3e03abaa794873d097c192b30d1ace = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64c15508566610ac1b5c9c28ea3de9cd = $(`<div id="html_64c15508566610ac1b5c9c28ea3de9cd" style="width: 100.0%; height: 100.0%;">     구: 서초구<br>     위험 확률: 0.16<br>     복합 위험도: 0.37<br>     인구당범죄: 31.87<br>     인구당CCTV: 7.82     </div>`)[0];
+                popup_fd3e03abaa794873d097c192b30d1ace.setContent(html_64c15508566610ac1b5c9c28ea3de9cd);
+            
+        
+
+        circle_marker_70e169bc4781e42fccfe18f12fe0946a.bindPopup(popup_fd3e03abaa794873d097c192b30d1ace)
+        ;
+
+        
+    
+    
+            var circle_marker_9bebd5e695aff98d797552be10bfc6b1 = L.circleMarker(
+                [37.5172, 127.0473],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_4f00e25466f4cc815cb922e9c8b68918 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3ad0fa976349195dee637d20a2e9070 = $(`<div id="html_d3ad0fa976349195dee637d20a2e9070" style="width: 100.0%; height: 100.0%;">     구: 강남구<br>     위험 확률: 0.12<br>     복합 위험도: 0.39<br>     인구당범죄: 104.86<br>     인구당CCTV: 10.65     </div>`)[0];
+                popup_4f00e25466f4cc815cb922e9c8b68918.setContent(html_d3ad0fa976349195dee637d20a2e9070);
+            
+        
+
+        circle_marker_9bebd5e695aff98d797552be10bfc6b1.bindPopup(popup_4f00e25466f4cc815cb922e9c8b68918)
+        ;
+
+        
+    
+    
+            var circle_marker_55f9db0567b9a2257e850b4c0bd58c47 = L.circleMarker(
+                [37.5133, 127.1001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_5da6e01b9fa9ac73de1ee61c19732e6b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd379459dbc5b16bfcc6c538dd290353 = $(`<div id="html_dd379459dbc5b16bfcc6c538dd290353" style="width: 100.0%; height: 100.0%;">     구: 송파구<br>     위험 확률: 0.09<br>     복합 위험도: 0.42<br>     인구당범죄: 100.48<br>     인구당CCTV: 7.11     </div>`)[0];
+                popup_5da6e01b9fa9ac73de1ee61c19732e6b.setContent(html_dd379459dbc5b16bfcc6c538dd290353);
+            
+        
+
+        circle_marker_55f9db0567b9a2257e850b4c0bd58c47.bindPopup(popup_5da6e01b9fa9ac73de1ee61c19732e6b)
+        ;
+
+        
+    
+    
+            var circle_marker_d3b9f0f45bc08e166cd260790d39d823 = L.circleMarker(
+                [37.5301, 127.1238],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4afe725fb58c28be825a107b7335e59e);
+        
+    
+        var popup_8ea58dcbe95bb6f449712f96c3d9e765 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcda1346a939c216b63146f2f0e107b1 = $(`<div id="html_dcda1346a939c216b63146f2f0e107b1" style="width: 100.0%; height: 100.0%;">     구: 강동구<br>     위험 확률: 0.10<br>     복합 위험도: nan<br>     인구당범죄: 93.83<br>     인구당CCTV: nan     </div>`)[0];
+                popup_8ea58dcbe95bb6f449712f96c3d9e765.setContent(html_dcda1346a939c216b63146f2f0e107b1);
+            
+        
+
+        circle_marker_d3b9f0f45bc08e166cd260790d39d823.bindPopup(popup_8ea58dcbe95bb6f449712f96c3d9e765)
+        ;
+
+        
+    
+</script>
+</html>
